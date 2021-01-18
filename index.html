@@ -76,6 +76,7 @@
             border: 3px solid black ;
             font-size: medium;
             border-radius: 3rem;
+            background-color: cornsilk;
             width: 75%;
             font-family: 'Yusei Magic', sans-serif;
             display: block;
@@ -87,6 +88,7 @@
 
         #blw {
             text-align: center;
+            font-weight: bolder;
         }
 
         
@@ -105,6 +107,13 @@
             
         }
 
+        .para {
+            color: black;
+            font-family: 'Sofia', cursive;
+            width: 30%;
+            padding-top: 5rem;
+            font-size: 1.25rem;
+        }
 
     </style>
 </head>
@@ -114,12 +123,16 @@
         <h1> Banana speak! </h1>
     </nav>
     <header>
+        <p class="para">
+            Minions are known for their gibberish language. But the gibberish they say is an actual language. Use this translator to convert your text from English to Minion speak or Banana language.
+        </p>
         <img src="images/minions.jpg" />
     </header>
-
+    <div>
     <textarea id="text-area" placeholder="Enter your text here that needs to be translated..."></textarea>
-    <br><br>
-    <span id="btnn">
+    <br>
+</div>
+<span id="btnn">
     <button id="btn-Main"> Translate </button>
     </span>
     <br>
@@ -132,6 +145,7 @@
         <h1>
         Made with ❤️
         </h1>
+        
 
 
     </footer>
