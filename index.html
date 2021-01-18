@@ -6,33 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minion Speak</title>
     <style>
-        button {
-            background-color: yellow;
+    @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 
+
+        #btnn {
+
+            align-content: center;
+            display: flex;
+            font-display: color: tomato;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            
         }
 
         h1 {
+            color: tomato;
+            font-family: 'Sofia', cursive;
+            font-size: 1.75rem;
+        }
 
-            font: 3rem sans-serif;
-            display: block;
-            color: yellow
+        nav {
+            background-color: #5A5558;
+            height: 5rem;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 0rem;
+            border-bottom-left-radius: 100rem;
+            border-bottom-right-radius:100rem;
+            
+        }
+
+        footer {
+            background-color: #5A5558;
+            height: 7rem;
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 0rem;
+            border-top-left-radius: 100rem;
+            border-top-right-radius:100rem;
+
+        }
+
+        body {
+            background-color: #FFD401;
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 0;;
+
         }
 
         textarea {
-            width: 90%;
+            border: 3px solid black ;
+            width: 75%;
+            font-family: 'Yusei Magic', sans-serif;
             display: block;
-            margin: 1rem;
-            height: 15vh;
-            padding: 1rem;
+            margin-left: 10rem;
+            margin-right: 4rem;;
+            height: 10vh;
+            padding:1rem;
+        }
+
+        #blw {
+            text-align: center;
         }
 
         
         #output {
-            border: 1px solid black ;
-            height: 15vh;
-            width: 80%;
-            margin: 1rem;
-            padding: 1rem;
+            border: 3px solid black ;
+            width: 71%;
+            background-color:ivory;
+            font-family: 'Yusei Magic', sans-serif;
+            display: block;
+            margin-left: 12rem;
+            margin-right: 2rem;
+            margin-bottom: 2rem;
+            height: 10vh;
+            
         }
 
 
@@ -40,14 +97,31 @@
 </head>
 
 <body>
-
-    <h1> Banana speak </h1>
+    <nav>
+        <h1> Banana speak! </h1>
+    </nav>
+    <header>
+        <img src="images/minions.jpg" />
+    </header>
 
     <textarea id="text-area" placeholder="Enter your text here that needs to be translated..."></textarea>
+    <br><br>
+    <span id="btnn">
     <button id="btn-Main"> Translate </button>
-    <div style="font-size: larger;">You have the translation below </div>
+    </span>
+    <br>
+    <div id="blw" style="font-family: 'Sofia', cursive; font-size: x-large;">You have the translation below </div>
+    <br>
     <div id="output"></div>
     <script src="app.js" type="text/javascript"></script>
+
+    <footer>
+        <h1>
+        Made with ❤️
+        </h1>
+
+
+    </footer>
 </body>
 
 </html>
